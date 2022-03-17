@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242526"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText, NestedWeights, RtlHardcoded, RtlSymmetry, Autofill,TextFields">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/banner"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingTop="5dp"
+        tools:ignore="RtlHardcoded, RtlSymmetry">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:text="English ~ "
+            android:paddingLeft="10dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Xem Thêm..."
+            android:textSize="12sp"
+            android:textColor="@color/blue"
+            android:paddingTop="1.5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="30dp"
+            android:hint="Số điện thoại hoặc email" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Đăng nhập"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/radius"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Quên mật khẩu?"
+            android:gravity="center"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="18dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:translationY="20dp"
+            />
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:text="HOẶC"
+            android:textSize="12sp"
+            android:translationY="8dp"
+            android:translationX="170dp"
+            android:background="#242526"
+            android:gravity="center"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="3.5">
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:text="Tạo tài khoản Facebook mới"
+            android:background="@drawable/radius2"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.1"
+            android:text="Báo cáo sự cố"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
